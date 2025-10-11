@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    const betterThanAverage = (classPoints, yourPoints) => {
+        let sum = 0;
+        let calculation = 0;
+
+        for (let i = 0; i < classPoints.length; i += 1) {
+            sum = sum + classPoints[i] // складываем все числа
+        }
+        calculation = sum / classPoints.length
+       return  Math.round(calculation) < yourPoints ? true : false
+    }
+
+
+    console.log(betterThanAverage([12, 23, 34, 45, 56, 67, 78, 89, 90], 9))
+
+</script>
+</body>
+</html>
+
+
+<!--В вашем классе был тест, и вы его сдали. Поздравляем!-->
+
+<!--Но вы амбициозный человек. Вы хотите узнать, лучше ли вы, чем средний ученик в вашем классе.-->
+
+<!--Вы получаете массив с результатами тестов ваших одноклассников. Теперь вычислите средний балл и сравните его!-->
+
+<!--Верните true, если вы лучше, иначе false!-->
+
+<!--Примечание:-->
+<!--Ваши баллы не включаются в массив баллов вашего класса. Не забудьте их при вычислении среднего балла!-->
